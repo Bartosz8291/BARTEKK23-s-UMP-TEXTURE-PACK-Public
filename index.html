@@ -4,49 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BARTEKK23's UMP Texture Pack</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #007BFF;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        a:hover {
-            background-color: #0056b3;
-        }
-
-        h1, h2, h3 {
-            margin: 10px 0;
-        }
-
-        text {
-            display: inline-block;
-            font-size: 16px;
-            font-style: italic;
-            color: #ddd;
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div id="container">
@@ -54,10 +13,11 @@
             <h1>BARTEKK23's UMP Texture Pack</h1>
             <h2>This is an UMP (Ultralight MIDI Player) Texture Pack made with a YouTube tutorial</h2>
             <h3>NOTE: THIS IS STILL IN BETA AND MAY CONTAIN BUGS</h3>
-            <text>This is a custom text styled using the <code>&lt;text&gt;</code> tag.</text>
+            <text id="custom-text">Click the button below to update this text dynamically.</text>
         </section>
         <section id="download">
-            <a href="https://github.com/Bartosz8291/BARTEKK23-s-UMP-TEXTURE-PACK-Public/releases" target="_blank">Download BARTEKK23's UMP Texture Pack</a>
+            <a id="download-btn" href="https://github.com/Bartosz8291/BARTEKK23-s-UMP-TEXTURE-PACK-Public/releases" target="_blank">Download BARTEKK23's UMP Texture Pack</a>
+            <button id="change-text-btn">Change Text</button>
         </section>
     </div>
 </body>
